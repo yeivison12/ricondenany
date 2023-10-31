@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Contáctanos
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link rel="icon" type="image/ico" href="img/ico.ico">
+	</head>
+	<body>
+		<header>
+			<div id="log-cont" class="header">
+				<a href="index.html"><img src="img/bar_trans.png" id="logo"></a>
+			</div>
+			<section id="nav" class="header">
+				<nav id="main">
+					<ul>
+						<li><a href="index.html">Inicio</a>
+						<li><a href="Productos.html">Productos</a></li>
+						<li><a href="Nosotros.html">Sobre Nosotros</a></li>
+						<li><a href="Contacto.html">Contáctanos</a></li></li>
+					</ul>
+				</nav>
+			</section>
+			<div id="social" class="header">
+				<a href="https://www.facebook.com/elrincondenany369/" target="_blanck"><img src="img/fb.png"></a>
+				<a href="https://www.instagram.com/elrincondenany_/" target="_blanck"><img src="img/ig.png"></a>
+				<a href="https://www.youtube.com/channel/UCNLvJWamkOB50P0CLozljUw" target="_blanck"><img src="img/yt.png"></a>
+			</div>
+		</header>
+		<div id="header2">
+			<div id="log-cont2">
+				<a href="inicio.html"><img src="img/bar_trans.png" id="logo"></a>
+			</div>
+			<nav id="responsive">
+				<ul>
+					<li><a href="Inicio.html" class="nav-enlace miss block">Inicio</a>
+					<li><a href="Productos.html" class="nav-enlace miss block">Productos</a></li>
+					<li><a href="Nosotros.html" class="nav-enlace miss block">Sobre Nosotros</a></li>
+					<li><a href="Contacto.html" class="nav-enlace miss block">Contáctanos</a></li>
+					<li>
+						<div>
+							<a href="https://www.facebook.com/elrincondenany369/" target="_blanck" class="nav-enlace miss si"><img src="img/fb.png"></a>
+							<a href="https://www.instagram.com/elrincondenany_/" target="_blanck" class="nav-enlace miss si"><img src="img/ig.png"></a>
+							<a href="https://www.youtube.com/channel/UCNLvJWamkOB50P0CLozljUw" target="_blanck" class="nav-enlace miss si"><img src="img/yt.png"></a>
+						</div>
+					</li>
+				</ul>
+				<button class="nav-boton" onclick="accion()"><img src="img/boton.png"></button>	
+			</nav>
+		</div>
+
+
+
+		<!-- ***************************************************************************** --> 
+
+
+		
+		<content>
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.88903796970928!2d-75.52681122131428!3d6.234095674315648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef3f8bfcd10cadb3!2sEl%20Rinc%C3%B3n%20de%20Nany!5e0!3m2!1ses-419!2sco!4v1625693163659!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id="form">
+				<form>
+					<div class="input">
+						<label>Nombre:</label>
+						<input type="text" name="name" id="name">
+					</div>
+					<div class="input">
+						<label>Apellido:</label>
+						<input type="text" name="secname" id="secname">
+					</div>
+					<div class="input">
+						<label>Correo electrónico:</label>
+						<input type="email" name="contact" placeholder="ejemplo@gmail.com">
+					</div>
+					<div class="input">
+						<label>Número telefónico:</label>
+						<input type="tel" name="contact2">
+					</div>
+					<div id="send">
+						<label>¿Quiéres decirnos algo?</label>
+						<textarea name="text" rows="10" cols="75" placeholder="Enviános un mensaje"></textarea>
+					</div>
+					<button type="button"> Enviar </button>
+				</form>
+			</div>
+		</content>
+		<footer>
+			<div id="funo">
+				<ul>
+					<li class="fnav"><a href="Inicio.html">Inicio</a>
+					<li class="fnav"><a href="Productos.html">Productos</a></li>
+					<li class="fnav"><a href="Nosotros.html">Sobre Nosotros</a></li>
+					<li class="fnav"><a href="Contacto.html">Contáctanos</a></li>
+					<li class="fnav">
+						<div>
+							<a href="https://www.facebook.com/elrincondenany369/" target="_blanck"><img src="img/fb.png"></a>
+							<a href="https://www.instagram.com/elrincondenany_/" target="_blanck"><img src="img/ig.png"></a>
+							<a href="https://www.youtube.com/channel/UCNLvJWamkOB50P0CLozljUw" target="_blanck"><img src="img/yt.png"></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="fdos">
+				<div id="auno">
+					<p>El Rincón De Nany®</p>
+				</div>
+				<div id="ados">
+
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			
+			function accion(){
+				var ancla = document.getElementsByClassName('nav-enlace');
+				for (var i = 0; i < ancla.length; i++){
+					ancla[i].classList.toggle('miss');
+				}
+			}
+
+		</script>
+	</body>
+</html>

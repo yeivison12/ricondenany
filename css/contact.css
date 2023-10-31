@@ -1,0 +1,178 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+content {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	width: 100%;
+	height: auto;
+	font-family: calibri;
+	font-size: 22px;
+}
+
+#map, #form{
+	width: 50%;
+	height: inherit;
+}
+#map, #form{
+	margin: 100px 0;
+}
+
+#map iframe{
+	padding: 90px;
+	width: 500px;
+	height: 350px;
+}
+
+
+#form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-items: space-between;
+	width: 50%;
+	padding-top: 60px;
+}
+
+#form button{
+	width: 30%;
+	height: 30px;
+	margin-top: 5px;
+}
+
+form div label{
+	display: block;
+	margin-bottom: 10px;
+}
+input{
+	width: 70%;
+	height: 30px;
+}
+
+form div, form button{
+	margin-left: 30px;
+}
+.input{
+	width: 45%;
+}
+
+#send {
+	width: 100%;
+}
+
+form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+footer{
+	margin-top: 50px;
+}
+
+/*****************************************************/
+
+
+
+
+@media screen and (max-width: 1600px) {
+	content {
+		height: 700px;
+	}
+	#map iframe{
+		padding: 90px;
+		width: 600px;
+		height: 500px;
+	}
+	#dos ul {
+		padding-top: 5px;
+	}
+	#uno p{
+		padding: 200px 100px 20px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	content {
+		height: 500px;
+	}
+	#map iframe{
+		padding: 90px;
+		width: 535px;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	content {
+		height: auto;
+	}
+
+	#map, #form {
+		width: 100%;
+	}
+
+	#map iframe {
+		padding: 10px 90px;
+		width: 840px;
+		height: 400px;
+	}
+
+	#form {
+		padding: 20px 120px;
+	}
+
+@media screen and (max-width: 768px) {
+	content {
+		height: auto;
+	}
+
+	#map, #form {
+		width: 100%;
+		margin: 0;
+	}
+
+	#map iframe {
+		padding: 90px;
+		width: 580px;
+		height: 400px;
+	}
+
+	#form {
+		padding: 0 60px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	content {
+		height: auto;
+	}
+
+	#map, #form {
+		width: 100%;
+	}
+
+	#map iframe {
+		padding: 30px 30px;
+		width: 420px;
+		height: 400px;
+	}
+
+	#form {
+		padding: 50px 0px;
+	}
+
+	textarea{
+		width: 70%;
+	}
+	.input {
+		width: 43%;
+	}
+}
+
+
